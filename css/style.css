@@ -597,3 +597,25 @@ body.dark .btn-outline:hover{
 body.dark .about-section p{
   color:#d1d5db;
 }
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px;
+  display: block;   /* 🔥 IMPORTANT */
+}
+.cert-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
