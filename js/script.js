@@ -74,3 +74,7 @@ function openCert(src){
 function closeCert(){
   document.getElementById("certPopup").style.display="none";
 }
+/* NAVBAR MOBILE TOGGLE */
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("show");
+}

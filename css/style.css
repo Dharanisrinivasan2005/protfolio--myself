@@ -619,3 +619,102 @@ body.dark .about-section p{
     grid-template-columns: 1fr;
   }
 }
+/* ================= NAVBAR ================= */
+
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb;
+  z-index:1000;
+}
+
+body.dark .navbar{
+  background:#0b1220;
+  border-color:#1e293b;
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:14px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+}
+
+/* Links */
+.nav-links{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#111827;
+  font-weight:500;
+}
+
+body.dark .nav-links a{
+  color:#f8fafc;
+}
+
+/* Contact button */
+.nav-btn{
+  padding:8px 18px;
+  border-radius:999px;
+  background:#111827;
+  color:white !important;
+}
+
+body.dark .nav-btn{
+  background:#2563eb;
+}
+
+/* Mobile menu */
+.menu-icon{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* Offset for fixed navbar */
+.section{
+  scroll-margin-top:90px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .nav-links{
+    position:absolute;
+    top:64px;
+    right:24px;
+    background:#ffffff;
+    flex-direction:column;
+    gap:20px;
+    padding:20px 24px;
+    border-radius:14px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    display:none;
+  }
+
+  body.dark .nav-links{
+    background:#020617;
+  }
+
+  .nav-links.show{
+    display:flex;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+}
+
