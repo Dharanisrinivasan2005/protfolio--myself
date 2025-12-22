@@ -17,27 +17,32 @@
 <body>
 
   <!-- NAVBAR -->
-<nav class="navbar">
+   <nav class="navbar">
   <div class="nav-container">
+
     <div class="logo">Dharani</div>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact" class="nav-btn">Contact</a></li>
-    </ul>
-<div class="nav-right">
-  <button id="themeToggle" class="theme-btn">
-    <i class="fa-solid fa-moon"></i>
-  </button>
+    <div class="nav-right">
+      <button id="themeToggle" class="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
 
-  <div class="menu-icon" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
+      <button class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
   </div>
-</div>
-  </div>
+
+  <!-- MOBILE MENU -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#certificates" onclick="closeMenu()">Certificates</a></li>
+    <li><a href="#contact" class="nav-btn" onclick="closeMenu()">Contact</a></li>
+  </ul>
 </nav>
+
 
 
 

@@ -95,4 +95,11 @@ themeToggle.addEventListener("click", ()=>{
     ? '<i class="fa-solid fa-sun"></i>'
     : '<i class="fa-solid fa-moon"></i>';
 });
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("show");
+}
+
+function closeMenu(){
+  document.getElementById("navLinks").classList.remove("show");
+}
 
