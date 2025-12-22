@@ -85,3 +85,14 @@ themeToggle.addEventListener("click", ()=>{
     ? '<i class="fa-solid fa-sun"></i>'
     : '<i class="fa-solid fa-moon"></i>';
 });
+const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", ()=>{
+  document.body.classList.toggle("dark");
+
+  themeToggle.innerHTML =
+    document.body.classList.contains("dark")
+    ? '<i class="fa-solid fa-sun"></i>'
+    : '<i class="fa-solid fa-moon"></i>';
+});
+

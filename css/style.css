@@ -724,21 +724,27 @@ body.dark .nav-btn{
   gap:16px;
 }
 
-/* THEME BUTTON */
+/* THEME TOGGLE BUTTON */
 .theme-btn{
   width:42px;
   height:42px;
   border-radius:50%;
-  border:1px solid #e5e7eb;
-  background:#f9fafb;
+  border:1.5px solid #d1d5db;
+
+  background:#f3f4f6;      /* light gray */
+  color:#111827;           /* dark icon */
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   cursor:pointer;
   font-size:16px;
-  transition:all .25s ease;
+
+  transition:all 0.25s ease;
 }
 
+/* Hover */
 .theme-btn:hover{
   background:#e5e7eb;
   transform:rotate(15deg);
@@ -746,12 +752,11 @@ body.dark .nav-btn{
 
 /* DARK MODE */
 body.dark .theme-btn{
-  background:#020617;
-  border-color:#1e293b;
-  color:#f8fafc;
+  background:#020617;      /* dark bg */
+  border-color:#334155;
+  color:#f8fafc;           /* white icon */
 }
 
 body.dark .theme-btn:hover{
   background:#1e293b;
 }
-
