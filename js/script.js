@@ -78,3 +78,10 @@ function closeCert(){
 function toggleMenu(){
   document.getElementById("navLinks").classList.toggle("show");
 }
+themeToggle.addEventListener("click", ()=>{
+  document.body.classList.toggle("dark");
+  themeToggle.innerHTML = 
+    document.body.classList.contains("dark")
+    ? '<i class="fa-solid fa-sun"></i>'
+    : '<i class="fa-solid fa-moon"></i>';
+});

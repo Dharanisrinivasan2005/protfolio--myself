@@ -717,4 +717,41 @@ body.dark .nav-btn{
     display:block;
   }
 }
+/* NAV RIGHT CONTAINER */
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+/* THEME BUTTON */
+.theme-btn{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:1px solid #e5e7eb;
+  background:#f9fafb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  font-size:16px;
+  transition:all .25s ease;
+}
+
+.theme-btn:hover{
+  background:#e5e7eb;
+  transform:rotate(15deg);
+}
+
+/* DARK MODE */
+body.dark .theme-btn{
+  background:#020617;
+  border-color:#1e293b;
+  color:#f8fafc;
+}
+
+body.dark .theme-btn:hover{
+  background:#1e293b;
+}
 
